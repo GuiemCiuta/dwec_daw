@@ -57,7 +57,7 @@ function comprobarNum(numUsuario) {
     actualizarContador();
 
     if (comprobarSiPuedeSeguirJugando()) {
-        feedbackFinal.innerHTML = "Has perdido...";
+        feedbackFinal.innerHTML = "Has perdido... El número era " + NUMERO_A_ADIVINAR;
         puedeJugar = false;
         return;
     }

@@ -12,7 +12,6 @@ function generaNumAleatorio(minIncl, maxIncl) {
 
 const NUMERO_A_ADIVINAR = generaNumAleatorio(numMin, numMax);
 
-console.log(NUMERO_A_ADIVINAR);
 
 function generaBotones(primerNum, ultimoNum, contenedor) {
     limpiarContenedor(contenedor);

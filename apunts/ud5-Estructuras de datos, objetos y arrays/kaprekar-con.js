@@ -67,4 +67,4 @@ function rellenarNumConCeros(numero, longitud) {
     return cadenaNumero;
 }
 
-console.log(exec(888));
+console.log(exec(6174));

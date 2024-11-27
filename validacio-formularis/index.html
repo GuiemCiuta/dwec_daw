@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de formularis</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenidor">
+        <form class="form" id="form">
+            <h2>Registri's amb nosaltres</h2>
+
+            <div class="form-control">
+                <label for="nom-usuari">Nom d'usuari</label>
+                <input type="text" id="nom-usuari" placeholder="Entri el seu nom d'usuari" />
+                <small>Missatge d'error</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Correu electrònic</label>
+                <input type="text" id="email" placeholder="Entri el seu nom correu electrònic" />
+                <small>Missatge d'error</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Contrasenya</label>
+                <input type="password" id="password" placeholder="Entri la seva contrasenya" />
+                <small>Missatge d'error</small>
+            </div>
+            <div class="form-control">
+                <label for="password-confirm">Confirmi la contrasenya</label>
+                <input type="password" id="password-confirm" placeholder="Entri de nou la seva contrasenya" />
+                <small>Missatge d'error</small>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

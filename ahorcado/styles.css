@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body {
@@ -8,6 +9,18 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     background-color: rgb(255, 248, 219);
+}
+
+img {
+    pointer-events: none;
+}
+
+.main {
+    transition: 1s;
+}
+
+.main.desactivado  {
+    filter: blur(10px);
 }
 
 .cronometro {
@@ -26,12 +39,54 @@ body {
 .titulo {
     display: block;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 5rem;
     background-color: rgb(131, 90, 15);
     color: white;
     padding: .9rem 1.8rem;
     border-radius: 100px;
     width: fit-content;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+    width: 90%;
+    max-width: 23rem;
+    background-color: rgb(255, 248, 219);
+    border-radius: 8px;
+    z-index: 4;
+    box-shadow: 5px 0 20px 1px rgba(3, 3, 3, 0.5);
+    transform: translate(-50%, 110vh);
+    transition: transform 1s;
+}
+
+.modal-titulo {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: .3rem;
+}
+
+.modal * {
+    color: rgb(36, 23, 23);
+}
+
+.modal.mostrar {
+    transform: translate(-50%, -50%);
+}
+
+.btn-bloque {
+    background-color: rgb(36, 23, 23);
+    color: rgb(255, 242, 207);
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
 }
 
 .display-vidas {
@@ -41,6 +96,16 @@ body {
     width: fit-content;
     background-color: rgb(36, 23, 23);
     border-radius: 0 0 20px 20px;
+    color: white;
+}
+
+.subtitle {
+    display: block;
+    margin: auto;
+    padding: .7rem 1.5rem;
+    width: fit-content;
+    background-color: rgb(36, 23, 23);
+    border-radius: 50px;
     color: white;
 }
 
@@ -99,4 +164,116 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 2rem;
+}
+
+.guion-espacio {
+    width: 1.5rem;
+}
+
+.monigote {
+    z-index: 0;
+    height: 18rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.nombre-nuevo-jugador {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .7rem;
+    border: 2px solid rgb(70, 44, 44);
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.mostrar-nombre-jugador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(70, 44, 44);
+    color: white;
+    padding: .8rem;
+    max-width: 7em;
+    white-space: nowrap;
+    border-bottom-left-radius: 10px;
+    text-transform: capitalize;
+}
+
+.jugadores-guardados {
+    padding: .5rem 0;
+    overflow: auto;
+    max-height: 20rem;
+    list-style: none;
+}
+
+.jugador-guardado {
+    display: block;
+    position: relative;
+    background-color: rgb(70, 44, 44);
+    color: white;
+    margin-bottom: .5rem;
+    padding: .8rem;
+    border-radius: 300px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn-eliminar-jugador {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 5px solid rgb(70, 44, 44);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-eliminar-jugador-icono {
+    display: inline-block;
+    height: 70%;
+    width: 70%;
+}
+
+.efecto-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.efecto-hover::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    border-radius: inherit;
+    opacity: .1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+
+.efecto-hover:hover::before {
+    transform: translateX(0);
+}
+
+.categoria {
+    text-align: left;
+    font-size: 1.3rem;
+    color:rgb(36, 23, 23);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.categoria-input {
+    transform: scale(1.5);
+    margin-right: .5rem;
+    accent-color: rgb(70, 44, 44);
 }

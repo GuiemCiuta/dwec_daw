@@ -1,0 +1,5 @@
+1 - Fes que els missatges d'error desapareguin quan l'usuari corregeix el camp ✅
+2 - Afegeix un camp numèric per a l'edat. Afegeix la validació d'obligatori. ✅
+3 - Afegeix un menú desplegable perquè l'usuari introdueixi el seu nivell d'anglès amb els valors
+possibles: A1, A2, B1, B2, C1 i C2. Afegeix una opció inicial, tipus "Seleccioni el seu nivell d'anglès". Introdueix la validació d'obligatorietat. ✅
+4 - Afegeix un control tipus checkbox per a indicar si l'usuari accepta els termes i condicions. Afegeix també la validació d'obligatorietat. ✅

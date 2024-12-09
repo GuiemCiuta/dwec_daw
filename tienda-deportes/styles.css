@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: floralwhite;
+    background-color: rgb(153, 16, 43);
+}
+
+header {
+    background-color: rgb(14, 7, 7);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 80vh;
+    min-height: 80svh;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    background-color: floralwhite;
+    color: rgb(14, 7, 7);
+    width: 50%;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+
+button {
+    display: block;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+footer {
+    background-color: rgb(14, 7, 7);
+    color: floralwhite;
+    padding: .2rem;
+    text-align: center;
+}

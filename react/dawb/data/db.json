@@ -1,0 +1,54 @@
+{
+  "asignaturas": [
+    {
+      "nombre": "Desarrollo Web en Entorno Cliente",
+      "horas totales": "125",
+      "id": "1"
+    },
+    {
+      "nombre": "Desarrollo Web en Entorno Servidor",
+      "horas totales": "1605",
+      "id": "2"
+    },
+    {
+      "nombre": "Despliegue de Aplicaciones Web",
+      "horas totales": "90",
+      "id": "13"
+    },
+    {
+      "nombre": "Diseño de Interficies Web",
+      "horas totales": "125",
+      "id": "4"
+    },
+    {
+      "id": "c62b",
+      "nombre": "prueba",
+      "horas totales": "123"
+    },
+    {
+      "id": "18fa",
+      "nombre": "prova effect",
+      "horas totales": "12"
+    },
+    {
+      "id": "f22e",
+      "nombre": "prova 44",
+      "horas totales": "12"
+    },
+    {
+      "id": "e6ac",
+      "nombre": "inglés",
+      "horas totales": "12"
+    },
+    {
+      "id": "b065",
+      "nombre": "que tal?",
+      "horas totales": "123"
+    },
+    {
+      "id": "7ab3",
+      "nombre": "que tal?",
+      "horas totales": "123"
+    }
+  ]
+}

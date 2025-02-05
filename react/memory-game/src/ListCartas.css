@@ -1,0 +1,13 @@
+.ListCartas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ListCartas img {
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  object-fit: contain;
+  background-color: white;
+}
